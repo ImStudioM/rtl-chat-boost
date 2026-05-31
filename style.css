@@ -1,0 +1,5 @@
+.rtl-chat-boost {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
