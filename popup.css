@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 420px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+}
+
+.app {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+p {
+  margin: 3px 0 0;
+  color: #647089;
+  font-size: 12px;
+}
+
+.add-box,
+.selector-item {
+  background: #fff;
+  border: 1px solid #dce3ef;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(20, 45, 90, 0.06);
+}
+
+.add-box {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #cfd8e6;
+  border-radius: 10px;
+  padding: 9px 10px;
+  font-size: 13px;
+  outline: none;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #246bfe;
+  box-shadow: 0 0 0 3px rgba(36, 107, 254, 0.12);
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 13px;
+  color: #fff;
+  background: #246bfe;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.ghost {
+  color: #246bfe;
+  background: #eaf0ff;
+  padding: 7px 10px;
+}
+
+small {
+  display: block;
+  margin-top: 8px;
+  color: #69758f;
+}
+
+code {
+  color: #163d9d;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.selectors-list {
+  display: grid;
+  gap: 10px;
+}
+
+.selector-item {
+  display: grid;
+  grid-template-columns: 38px 1fr 34px;
+  gap: 10px;
+  align-items: start;
+}
+
+.selector-content {
+  display: grid;
+  gap: 8px;
+}
+
+.delete-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: #d93025;
+  background: #fff1f1;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.switch {
+  position: relative;
+  width: 36px;
+  height: 22px;
+  margin: 8px 0 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch span {
+  position: absolute;
+  inset: 0;
+  background: #c7d0df;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.switch span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.switch input:checked + span {
+  background: #246bfe;
+}
+
+.switch input:checked + span::before {
+  transform: translateX(14px);
+}
+
+footer {
+  min-height: 18px;
+  margin-top: 10px;
+  color: #247a3c;
+  font-size: 12px;
+}

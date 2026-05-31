@@ -4,17 +4,28 @@ Automatic RTL support for ChatGPT and Claude.
 
 RTL Chat Boost is a lightweight Chrome extension that improves readability for right-to-left languages in AI chats.
 
-It automatically detects RTL text and applies proper right-to-left direction only to supported chat/input areas.
-
 ## Features
 
 - Automatic RTL detection
 - Supports Hebrew, Arabic, Persian, Urdu and other RTL languages
 - Works with ChatGPT
 - Works with Claude
+- Managed selectors from the extension popup
+- Add, remove, enable and disable target selectors
 - Lightweight and fast
 - No tracking
-- No special permissions required
+
+## Managed selectors
+
+Open the extension popup to manage the selectors that should receive RTL support.
+
+Default selectors:
+
+```js
+#prompt-textarea
+.font-claude-response-body
+.tiptap.ProseMirror[aria-label="Write your prompt to Claude"]
+```
 
 ## Supported websites
 
@@ -38,56 +49,22 @@ chrome://extensions/
 6. Select the project folder:
 
 ```text
-rtl-chat-boost
+rtl-chat-boost-v1-1
 ```
 
 7. Open or refresh ChatGPT / Claude.
 
 ## Test sentence
 
-Use this sentence to test mixed RTL and English text:
-
 ```text
 שלום fire בדיקה עם ChatGPT ו-Claude
 ```
 
-## Files
-
-```text
-rtl-chat-boost/
-├── manifest.json
-├── content.js
-├── style.css
-├── icon16.png
-├── icon48.png
-├── icon128.png
-├── LICENSE
-└── README.md
-```
-
-## Chrome Web Store short description
-
-Automatic RTL support for ChatGPT and Claude.
-
-## Chrome Web Store full description
-
-RTL Chat Boost automatically adds right-to-left (RTL) support to AI chats.
-
-Features:
-
-- Automatic RTL detection
-- Supports Hebrew, Arabic, Persian, Urdu and other RTL languages
-- Works with ChatGPT
-- Works with Claude
-- Lightweight and fast
-- No tracking
-- No special permissions required
-
 ## Privacy
 
-RTL Chat Boost does not collect, store, or send any user data.
+RTL Chat Boost does not collect, store, or send user data.
 
-All detection happens locally in your browser.
+Selector settings are stored using Chrome Storage Sync.
 
 ## License
 

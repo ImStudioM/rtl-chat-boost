@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RTL Chat Boost</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <img src="icon48.png" alt="" class="logo">
+      <div>
+        <h1>RTL Chat Boost</h1>
+        <p>Manage RTL target selectors.</p>
+      </div>
+    </header>
+
+    <section class="add-box">
+      <label for="selectorInput">Add selector</label>
+      <div class="input-row">
+        <input id="selectorInput" type="text" placeholder="#prompt-textarea">
+        <button id="addBtn" type="button">Add</button>
+      </div>
+      <small>Example: <code>.font-claude-response-body</code></small>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Selectors</h2>
+        <button id="resetBtn" type="button" class="ghost">Reset</button>
+      </div>
+
+      <div id="selectorsList" class="selectors-list"></div>
+    </section>
+
+    <footer>
+      <span id="status"></span>
+    </footer>
+  </main>
+
+  <template id="selectorItemTemplate">
+    <div class="selector-item">
+      <label class="switch">
+        <input type="checkbox" class="selector-enabled">
+        <span></span>
+      </label>
+
+      <div class="selector-content">
+        <input type="text" class="selector-label" placeholder="Label">
+        <textarea class="selector-value" rows="2"></textarea>
+      </div>
+
+      <button type="button" class="delete-btn" title="Delete selector">×</button>
+    </div>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>
