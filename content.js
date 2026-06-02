@@ -6,6 +6,7 @@
   const defaultSelectors = [
     { selector: '#prompt-textarea', label: 'ChatGPT input', enabled: true },
     { selector: '[id^="ask-user-option-question"]', label: 'Option question', enabled: true },
+    { selector: '[data-testid="conversation-turn"]', label: 'ChatGPT conversation turn', enabled: true },
   
     { selector: '.font-claude-response', label: 'Claude response', enabled: true },
     { selector: '.font-claude-response-body', label: 'Claude response body', enabled: true },
