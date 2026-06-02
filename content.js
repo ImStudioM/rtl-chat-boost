@@ -5,7 +5,10 @@
 
   const defaultSelectors = [
     { selector: '#prompt-textarea', label: 'ChatGPT input', enabled: true },
-    { selector: '.font-claude-response-body', label: 'Claude response', enabled: true },
+    { selector: '[id^="ask-user-option-question"]', label: 'Option question', enabled: true },
+  
+    { selector: '.font-claude-response', label: 'Claude response', enabled: true },
+    { selector: '.font-claude-response-body', label: 'Claude response body', enabled: true },
     { selector: '.tiptap.ProseMirror[aria-label="Write your prompt to Claude"]', label: 'Claude input', enabled: true }
   ];
 
