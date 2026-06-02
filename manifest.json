@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "RTL Chat Boost",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Automatic RTL support for ChatGPT and Claude.",
   "icons": {
     "16": "icon16.png",
