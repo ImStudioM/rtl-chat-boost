@@ -1,8 +1,5 @@
-const defaultSelectors = [
-  { selector: '#prompt-textarea', label: 'ChatGPT input', enabled: true },
-  { selector: '.font-claude-response-body', label: 'Claude response', enabled: true },
-  { selector: '.tiptap.ProseMirror[aria-label="Write your prompt to Claude"]', label: 'Claude input', enabled: true }
-];
+// Shared defaults are provided by defaults.js (loaded first in popup.html).
+const defaultSelectors = RTL_CHAT_BOOST_DEFAULTS;
 
 const storageKey = 'rtlChatBoostSelectors';
 
