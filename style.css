@@ -1,5 +1,20 @@
 .rtl-chat-boost {
-  direction: rtl !important;
-  text-align: right !important;
-  unicode-bidi: plaintext !important;
+  /* Each paragraph resolves its own direction; alignment follows that
+     direction (start = right for Hebrew, left for English). !important is
+     needed because chat sites often hard-set text-align on their elements. */
+  unicode-bidi: plaintext;
+  text-align: start !important;
+}
+
+/* Keep code and preformatted text strictly left-to-right and isolated from
+   the surrounding Hebrew so symbols and indentation stay readable. */
+.rtl-chat-boost pre,
+.rtl-chat-boost code,
+.rtl-chat-boost kbd,
+.rtl-chat-boost samp,
+pre.rtl-chat-boost,
+code.rtl-chat-boost {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
 }

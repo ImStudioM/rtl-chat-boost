@@ -27,6 +27,7 @@
         "https://claude.ai/*"
       ],
       "js": [
+        "defaults.js",
         "content.js"
       ],
       "css": [
